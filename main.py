@@ -385,7 +385,7 @@ for gen in range(generations):
 			for itt in range(itterations):
 				action = tmp_net.update(stimuli)
 
-		images[0].save('C:\\Users\\Sage\\Desktop\\ff\\'+str(gen)+'.gif', save_all=True, append_images=images[1:], optimize=True, duration=64, loop=0)
+		images[0].save(str(gen)+'.gif', save_all=True, append_images=images[1:], optimize=True, duration=64, loop=0)
 
 	##########################################
 	# Speciation (group based on similarity) #
